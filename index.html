@@ -4,96 +4,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags In Html</title>
+    <title>Business Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 11vh;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 0px 13px;
+            font-size: 20px;
+            position: relative;
+            left: 1150px;
+        }
+
+        nav ul li:hover {
+            color: gray;
+            cursor: pointer;
+        }
+
+        .logo img {
+            height: 72px;
+            width: 72px;
+            display: inline-block;
+            margin: 1px;
+            /* border: 0px solid gray; */
+            padding: 1px;
+            position: absolute;
+            left: 42px;
+            border-radius: 21px;
+        }
+
+        .logo p {
+            position: absolute;
+            left: 134px;
+            margin-top: 28px;
+            font-size: 22px;
+        }
+
+        .bg {
+            background-image: url(bgg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+
+        }
+
+        .bg h1 {
+            display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 200px;
+        }
+
+        .bg h1 p {
+            /* display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 250px; */
+            font-size: 17px;
+            position: absolute;
+            left: 10px;
+        }
+
+        .btn {
+
+            font-size: 25px;
+            position: absolute;
+            left: 420px;
+            top: 270px;
+            /* margin: 2px;
+            border: 2px solid gray;
+            border-radius: 4px;
+            padding: 1px;
+            background-color: black;
+            color: white; */
+            text-decoration: none;
+        }
+        
+
+        /* .about {
+            height: 50vh;
+            
+            margin: 50px;
+            border: 4px solid black;
+            border-radius: 13px;
+            display: flex;
+            width: 391px;
+           
+        } */
+        .about img {
+            height: 50vh;
+
+            margin: 18px;
+            border: 4px solid black;
+            border-radius: 13px;
+            display: inline-block;
+            width: 391px;
+
+
+        }
+
+        .about p {
+            text-align: left;
+            /* height: 30vh; */
+            /* width: 322px; */
+            margin: 40px;
+            display: inline-block;
+            position: absolute;
+
+        }
+
+        .about1 img {
+            height: 50vh;
+
+            margin: 18px;
+            border: 4px solid black;
+            border-radius: 13px;
+            display: inline-block;
+            width: 391px;
+            position: relative;
+            left: 1050px;
+
+
+        }
+
+        .about1 p {
+            text-align: left;
+
+            margin: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            width: 1000px;
+
+        }
+
+
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 60px;
+        }
+
+        footer p {
+            padding: 20px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Changes To Content</h1>
-    <br>
-    <!-- Inseert and delete tags -->
-    <p>
-        we use <del>HTML4</del>
-        <ins>HTML5</ins>to Create A structure of a Webpage
-    </p>
+    <header>
 
-    <br>
-
-    <!-- Strikethrough Tag -->
-
-    <p>Apple Iphone 11 Pro:</p>
-    <p><s>Was $1199</s></p>
-    <p>Now only in $1100</p>
-
-
-    <!-- ordered list and unordered lists -->
-
-    <ol>
-        <li>FaceBook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-        <li>LinkDin</li>
-        <li>Medium</li>
-        <li>Reddit</li>
-        <li>Pinterest</li>
-    </ol>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+                <p>The Info! You Look For!</p>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </header>
 
 
-    <ul>
-        <li>FaceBook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-        <li>LinkDin</li>
-        <li>Medium</li>
-        <li>Reddit</li>
-        <li>Pinterest</li>
-    </ul>
+    <div class="bg">
+        <h1>The Best Online Business PlatForm!<br>
+            <p>For More Info Visit Our Social Media platforms</p>
+        </h1>
+        <div class="btn">
+            <!-- <input type="button"> -->
+            <button type="button">FaceBook</button>
+        </div>
 
-    <dl>
-        <dt>Traffic</dt>
-        <dd>Movements of vhicle</dd>
-    </dl><br>
-    <!-- nested lists -->
-    <h1>PIAIC AI Specialist</h1>
-    <h2>A Four Quarter AI program</h2>
-    <ol>
-        <li>Quarter 1</li>
-        <ul>
-            <li>AI For EveryOne</li>
-            <li>Python</li>
-            <li>Object Oriented programming</li>
-            <li>Kaggle</li>
-        </ul>
-        <li>Quarter 2</li>
-        <ul>
-            <li>Numpy</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Basics Of Machine Learning</li>
-        </ul>
-        <li>Quarter 3</li>
-        <ul>
-            <li>TensorFlow</li>
-            <li>Deep Learning</li>
-            <li>Docker</li>
-            <li>Linux</li>
-        </ul>
-        <li>Quarter 4</li>
-        <ul>
-            <li>Python MicroServices</li>
-            <li>Deployment</li>
-            <li>DataBases</li>
-        </ul>
-    </ol>
+    </div>
 
-    <p><b>For More Information <a target="_blank" href="https://www.piaic.org/artificial-inteligence">Click Here</a></b>
-    </p>
 
-    <p><b>Social Media</b></p>
-    <ul>
-        <li><a target="_blank" href="https://www.facebook.com/groups/piaic/">FaceBook</a></li>
-        <li><a target="_blank" href="https://www.youtube.com/channel/UC2Makv_pLAtvrjHNgg-pBLg">YouTube</a></li>
-        <li><a target="_blank" href="mailto:education@piaic.org">Email</a></li>
-    </ul>
+
+    <div class="about">
+        <img src="bg.jpg" alt="">
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quibusdam non soluta delectus ea commodi ullam
+            eaque, iure aspernatur repudiandae tenetur totam accusantium? Consequuntur sit ullam corporis repudiandae
+            totam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quidem quos. Illum laborum
+            dignissimos voluptatum aspernatur? Voluptates culpa omnis reprehenderit veritatis, deleniti vero sapiente
+            doloribus voluptas molestias eos nobis odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+            facere consequuntur voluptas dolorem iusto neque cumque beatae rem quia quibusdam totam, sequi molestiae
+            dicta magni nisi sed similique, excepturi non? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quia sapiente, saepe cumque facilis ipsa amet expedita accusantium dicta molestias, mollitia adipisci,
+            recusandae modi a commodi porro perferendis quo laborum eligendi tempore qui perspiciatis repellendus. Fuga
+            corrupti sapiente debitis nisi commodi quae nostrum quos perspiciatis, cupiditate sequi a ducimus molestias
+            hic! Sit, vel mollitia assumenda quam porro nihil dolores, ducimus perferendis similique sapiente sequi
+            aspernatur tenetur quisquam? Explicabo vitae voluptatibus voluptatem sit deleniti voluptatum voluptas veniam
+            consectetur ad aut, nihil eveniet provident architecto exercitationem est possimus beatae tenetur, tempore
+            tempora quod eius. Reiciendis exercitationem quibusdam nesciunt soluta, aperiam in labore maxime nostrum
+            explicabo aspernatur voluptatibus. Officia veritatis sunt, hic dicta dolores a quo minus voluptate rerum
+            quibusdam dolore voluptates. Cumque esse minus, optio consequuntur facilis distinctio quia quisquam corporis
+            magni officiis ducimus quidem incidunt minima est animi totam pariatur nihil aperiam amet! Nemo eveniet
+            totam tenetur explicabo nostrum. Vel iure maxime sed corporis. Eaque rem odit, hic totam distinctio
+            assumenda harum vitae nihil quibusdam nesciunt maiores alias voluptatum accusantium inventore? Reiciendis
+            eius pariatur repudiandae fuga eum recusandae, aliquam doloremque ullam optio blanditiis, adipisci quaerat,
+            rerum vitae accusamus facere ipsam omnis inventore! Nesciunt eum dicta debitis enim adipisci tempora ad
+            incidunt eaque ex laboriosam modi non nobis provident, voluptates, omnis praesentium dignissimos quae quos
+            in corrupti, placeat cumque! Ea ipsum quam odio dolor blanditiis in, saepe libero tempora maxime soluta
+            repellendus praesentium adipisci nemo suscipit similique tempore doloremque animi, consequatur mollitia.
+            Architecto ad id dicta aspernatur nam nisi,
+            repellendus?</p>
+    </div>
+
+
+
+
+
+    <div class="about1">
+        <img src="bg.jpg" alt="">
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quibusdam non soluta delectus ea commodi ullam
+            eaque, iure aspernatur repudiandae tenetur totam accusantium? Consequuntur sit ullam corporis repudiandae
+            totam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quidem quos. Illum laborum
+            dignissimos voluptatum aspernatur? Voluptates culpa omnis reprehenderit veritatis, deleniti vero sapiente
+            doloribus voluptas molestias eos nobis odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+            facere consequuntur voluptas dolorem iusto neque cumque beatae rem quia quibusdam totam, sequi molestiae
+            dicta magni nisi sed similique, excepturi non? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quia sapiente, saepe cumque facilis ipsa amet expedita accusantium dicta molestias, mollitia adipisci,
+            recusandae modi a commodi porro perferendis quo laborum eligendi tempore qui perspiciatis repellendus. Fuga
+            corrupti sapiente debitis nisi commodi quae nostrum quos perspiciatis, cupiditate sequi a ducimus molestias
+            hic! Sit, vel mollitia assumenda quam porro nihil dolores, ducimus perferendis similique sapiente sequi
+            aspernatur tenetur quisquam? Explicabo vitae voluptatibus voluptatem sit deleniti voluptatum voluptas veniam
+            consectetur ad aut, nihil eveniet provident architecto exercitationem est possimus beatae tenetur, tempore
+            tempora quod eius. Reiciendis exercitationem quibusdam nesciunt soluta, aperiam in labore maxime nostrum
+            explicabo aspernatur voluptatibus. Officia veritatis sunt, hic dicta dolores a quo minus voluptate rerum
+            quibusdam dolore voluptates. Cumque esse minus, optio consequuntur facilis distinctio quia quisquam corporis
+            magni officiis ducimus quidem incidunt minima est animi totam pariatur nihil aperiam amet! Nemo eveniet
+            totam tenetur explicabo nostrum. Vel iure maxime sed corporis. Eaque rem odit, hic totam distinctio
+            assumenda harum vitae nihil quibusdam nesciunt maiores alias voluptatum accusantium inventore? Reiciendis
+            eius pariatur repudiandae fuga eum recusandae, aliquam doloremque ullam optio blanditiis, adipisci quaerat,
+            rerum vitae accusamus facere ipsam omnis inventore! Nesciunt eum dicta debitis enim adipisci tempora ad
+            incidunt eaque ex laboriosam modi non nobis provident, voluptates, omnis praesentium dignissimos quae quos
+            in corrupti, placeat cumque! Ea ipsum quam odio dolor blanditiis in, saepe libero tempora maxime soluta
+            repellendus praesentium adipisci nemo suscipit similique tempore doloremque animi, consequatur mollitia.
+            Architecto ad id dicta aspernatur nam nisi,
+            repellendus?</p>
+    </div>
+
+
+    <div class="about">
+        <img src="bg.jpg" alt="">
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quibusdam non soluta delectus ea commodi ullam
+            eaque, iure aspernatur repudiandae tenetur totam accusantium? Consequuntur sit ullam corporis repudiandae
+            totam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quidem quos. Illum laborum
+            dignissimos voluptatum aspernatur? Voluptates culpa omnis reprehenderit veritatis, deleniti vero sapiente
+            doloribus voluptas molestias eos nobis odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+            facere consequuntur voluptas dolorem iusto neque cumque beatae rem quia quibusdam totam, sequi molestiae
+            dicta magni nisi sed similique, excepturi non? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quia sapiente, saepe cumque facilis ipsa amet expedita accusantium dicta molestias, mollitia adipisci,
+            recusandae modi a commodi porro perferendis quo laborum eligendi tempore qui perspiciatis repellendus. Fuga
+            corrupti sapiente debitis nisi commodi quae nostrum quos perspiciatis, cupiditate sequi a ducimus molestias
+            hic! Sit, vel mollitia assumenda quam porro nihil dolores, ducimus perferendis similique sapiente sequi
+            aspernatur tenetur quisquam? Explicabo vitae voluptatibus voluptatem sit deleniti voluptatum voluptas veniam
+            consectetur ad aut, nihil eveniet provident architecto exercitationem est possimus beatae tenetur, tempore
+            tempora quod eius. Reiciendis exercitationem quibusdam nesciunt soluta, aperiam in labore maxime nostrum
+            explicabo aspernatur voluptatibus. Officia veritatis sunt, hic dicta dolores a quo minus voluptate rerum
+            quibusdam dolore voluptates. Cumque esse minus, optio consequuntur facilis distinctio quia quisquam corporis
+            magni officiis ducimus quidem incidunt minima est animi totam pariatur nihil aperiam amet! Nemo eveniet
+            totam tenetur explicabo nostrum. Vel iure maxime sed corporis. Eaque rem odit, hic totam distinctio
+            assumenda harum vitae nihil quibusdam nesciunt maiores alias voluptatum accusantium inventore? Reiciendis
+            eius pariatur repudiandae fuga eum recusandae, aliquam doloremque ullam optio blanditiis, adipisci quaerat,
+            rerum vitae accusamus facere ipsam omnis inventore! Nesciunt eum dicta debitis enim adipisci tempora ad
+            incidunt eaque ex laboriosam modi non nobis provident, voluptates, omnis praesentium dignissimos quae quos
+            in corrupti, placeat cumque! Ea ipsum quam odio dolor blanditiis in, saepe libero tempora maxime soluta
+            repellendus praesentium adipisci nemo suscipit similique tempore doloremque animi, consequatur mollitia.
+            Architecto ad id dicta aspernatur nam nisi,
+            repellendus?</p>
+    </div>
+
+
+
+
+    <footer>
+        <p>All Rights reserved &copy; www.AI Nexus.Com</p>
+    </footer>
+
 </body>
 
 </html>
