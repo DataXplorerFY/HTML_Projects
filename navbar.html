@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 100px;
+            background-color: black;
+        }
+
+        .logo img {
+            height: 72px;
+            width: 79px;
+            display: inline-block;
+            margin: 14px 0px 0px 18px;
+        }
+        
+
+        nav ul li {
+            color: white;
+            display: inline-block;
+            padding: 13px;
+            text-align: right;
+            position: relative;
+            left: 107px;
+            /* padding-bottom: 31px; */
+            bottom: 65px;
+            font-size: 27px;
+        }
+        .container{
+            height: 80vh;
+            background-color: red;
+            
+            display: flex;
+            
+        }
+        .box1{
+            height: 244px;
+            width: 344px;
+            background-color: gray;
+            float: left;
+        }
+        .box2{
+            height: 244px;
+            width: 344px;
+            background-color: rgb(19, 154, 211);
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="log.avif" alt="">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+
+</html>
