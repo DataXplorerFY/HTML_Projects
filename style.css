@@ -1,97 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
 }
 
-header {
-    background-color: #023b6d;
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5) 50%),url(bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
     color: white;
-    height: 10vh;
-    position: sticky;
-    z-index: 999;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
 }
 
-nav img {
-
-    height: 30px;
-    width: 214px;
-    margin: 20px 0px;
-    margin-left: 70px;
-
-
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
 }
 
-.search {
+ul{
+    float: left;
+    justify-content: center;
     display: flex;
-    position: relative;
-    right: 73px;
-    margin: 17px 74px;
-    height: 30px;
-
-
+    align-items: center;
 }
-
-.search input {
-    background-color: #023b6d;
-    width: 250px;
-    border: 2px solid lightgray;
-    color: white;
-}
-
-nav ul {
-
-    display: flex;
-    float: right;
-
-}
-
-nav ul li {
+ul li{
     list-style: none;
-    margin: 20px 0px;
-    font-size: 17px;
-
-
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
 }
 
-nav ul li a {
-
-    color: white;
+ul li a{
     text-decoration: none;
-    padding: 18px;
-
-
-}
-
-nav ul li a:hover {
-    cursor: pointer;
-    color: gray;
-}
-
-main {
-    height: 100vh;
-}
-
-.container1 {
-
-    height: 35vh;
-    font-size: 25px;
-    color: #023b6d;
-
-
-    text-align: center;
-
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s  ease-in-out;
 
 }
 
-.heading {
-    position: relative;
-    top: 55px;
+ul li a:hover{
+    color: black;
 }
 
-.paragraph {
-    position: relative;
-    top: 65px;
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: white;
+    border: 2px solid white;
+    margin-top: 13px;
+    color: black;
+    font-size: 15px;
+    border-bottom-right-radius: 5px ;
+}
+
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
 }
